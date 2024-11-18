@@ -13,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/name', function () {
+    return response('Anteneh', 200);
+});
+
+Route::get('/hobby', function () {
+    return response()->json(['hobby' => 'meditation'], 200);
+});
+
+Route::get('/dream', function () {
+    return response('To feel whole, to be alive', 200);
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
